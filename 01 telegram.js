@@ -3,7 +3,9 @@
 * oleh : bangHasan
 *
 * ID: MWkhreE4chZ56V_bDwpYUBPvg_do21SJR
-* Versi Log, ada di file Guide
+* Versi Log, ada di file Version
+* Source Code: 
+*   https://github.com/banghasan/Telegram-Lib-GAS-V2
 *
 * Hasanudin H Syafaat
 * banghasan@gmail.com
