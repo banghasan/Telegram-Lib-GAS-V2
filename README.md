@@ -19,7 +19,24 @@
 ***********/
 ```
 
-Materi Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
+Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
+
+**Materi-materi berikutnya, akan menggunakan Library Versi 2 ini.**
+
+
+## Deploy
+
+1. Login lah dulu
+    clasp login
+2. Buat script
+    clasp create "Telegram"    
+3. Push script
+    clasp push
+4. Bundle script
+    clasp version
+5. Jangan lupa di atur hak akses-nya.        
+
+Detail penggunanaan clasp bisa dilihat di: https://github.com/google/clasp/
 
 --
 
