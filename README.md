@@ -18,6 +18,9 @@
 *
 ***********/
 ```
+
+Materi Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
+
 --
 
 Support dapat bergabung via Grup [@Bot Indonesia](https://t.me/botindonesia)
