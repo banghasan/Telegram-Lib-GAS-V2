@@ -31,13 +31,13 @@
 ## Deploy
 
 1. Login lah dulu
-    clasp login
+    `clasp login`
 2. Buat script
-    clasp create "Telegram"    
+    `clasp create "telegram"` 
 3. Push script
-    clasp push
+    `clasp push`
 4. Bundle script
-    clasp version
+    `clasp version`
 5. Jangan lupa di atur hak akses-nya.        
 
 Detail penggunanaan clasp bisa dilihat di: https://github.com/google/clasp/
