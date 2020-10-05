@@ -3,15 +3,12 @@
  */
 
 var Alur = {
-    doPost: function(e, debug) {
-        debug = debug || false;
-        
-        if(e.postData.type !== "application/json") {
-            return false;
-        }
+    doPost: function(e) {        
 
-        var update = JSON.parse(e.postData.contents);
-        if (update) return update;
+        if (e.postData.type == "application/json") {
+            var update = JSON.parse(e.postData.contents);
+            if (update) return update;            
+        }       
 
         return false;        
     }

@@ -19,9 +19,12 @@
 ***********/
 ```
 
-Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
+## Dokumentasi
 
-**Materi-materi berikutnya, akan menggunakan Library Versi 2 ini.**
+- https://bit.ly/telegram-lib-v2
+- Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
+
+**Materi-materi selanjutnya, akan menggunakan Library Versi 2 ini.**
 
 
 ## Deploy
