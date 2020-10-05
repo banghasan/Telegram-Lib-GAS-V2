@@ -21,7 +21,8 @@
 
 ## Dokumentasi
 
-- https://bit.ly/telegram-lib-v2
+- Dokumentasi Versi 2 dapat ditemukan di: https://bit.ly/telegram-lib-v2
+- Generator dapat dilihat di: https://github.com/banghasan/Telegram-GAS-Library-Generator
 - Belajar Google Apps Script di https://bit.ly/GooglescriptBotTelegram
 
 **Materi-materi selanjutnya, akan menggunakan Library Versi 2 ini.**
