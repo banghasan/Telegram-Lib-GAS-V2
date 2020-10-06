@@ -7,8 +7,13 @@
         + setToken(token)
         + getToken
 
-03-06: bug fix        
+03-07: bug fix        
 
-07 : user.js
+08 : user.js
         + delete(kunci)
-```        
+
+09* : Utils.js
+        + punyaAkses(array, index)
+```
+
+Tanda * berarti belum di rilis versi barunya.

@@ -44,6 +44,19 @@ var Utils = {
     return Utilities.formatString(template, args);
   },
 
+  // untuk pengecekkan hak akses
+  /* contoh: 
+      var adminID = [1, 2, 3, 4]
+      if ( tg.util.punyaAkses(adminID, msg.from.id) ) { .. }
+  */
+  punyaAkses: function (array, index) {
+    if (array.indexOf(index) > -1) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
   uuID: function () {
     // unik ID
     return Utilities.getUuid();
