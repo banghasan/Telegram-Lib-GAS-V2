@@ -33,6 +33,10 @@ var user = class User {
         return this.service.getKeys();
     }
 
+    delete(kunci) {
+        return this.service.deleteProperty(kunci);
+    }
+
     deleteAll() {
         return this.service.deleteAllProperties();
     }
