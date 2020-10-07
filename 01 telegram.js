@@ -52,9 +52,16 @@ class Telegram {
             'contentType': 'application/json'
         };
         if (data) {
-            options['payload'] = JSON.stringify(data);
-            if (form) options['payload'] = data;
+            options['payload'] = JSON.stringify(data);            
         }
+
+        if (form) {
+            options = {
+              'method' : 'post',
+              'payload': data
+            }
+        }
+          
         var response = UrlFetchApp.fetch(this.urlapi + this.token + '/' + method, options);
         if (response.getResponseCode() == 200) {
             if (blob) {

@@ -12,8 +12,10 @@
 08 : user.js
         + delete(kunci)
 
-09* : Utils.js
+09 : Utils.js
         + punyaAkses(array, index)
+
+10 : bug fix requestForm        
 ```
 
-Tanda * berarti belum di rilis versi barunya.
+_Tanda * berarti belum di rilis versi barunya._
