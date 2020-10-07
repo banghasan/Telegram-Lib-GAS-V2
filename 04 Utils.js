@@ -94,6 +94,14 @@ var Utils = {
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
     return time;
   },
+
+  // contoh: var blob = textBlob('Hasanudin H Syafaat', 'nama')
+  textBlob: function (isiText, namaFile) {
+    return Utilities.newBlob('')
+    .setDataFromString(isiText)
+    .setName(namaFile + '.txt')
+    .setContentType('plain/text');
+  },
   
   outputText: function(text) {
     return ContentService.createTextOutput(text);

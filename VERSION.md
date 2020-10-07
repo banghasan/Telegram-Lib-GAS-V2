@@ -15,7 +15,10 @@
 09 : Utils.js
         + punyaAkses(array, index)
 
-10 : bug fix requestForm        
+10 : bug fix requestForm
+
+11* : Utils.js
+        + textBlob(isiText, namaFile)
 ```
 
 _Tanda * berarti belum di rilis versi barunya._

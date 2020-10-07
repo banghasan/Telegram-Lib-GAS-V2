@@ -56,10 +56,8 @@ class Telegram {
         }
 
         if (form) {
-            options = {
-              'method' : 'post',
-              'payload': data
-            }
+            options = { 'method' : 'post' }
+            if (data) options['payload'] = data;      
         }
           
         var response = UrlFetchApp.fetch(this.urlapi + this.token + '/' + method, options);
