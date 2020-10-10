@@ -57,9 +57,24 @@ var Utils = {
     }
   },
 
-  random: function(array) {
-    return array[Math.floor(Math.random() * array.length)];
-  }
+  random: function () {
+
+    // random(list) : item
+    if (arguments.length === 1 && typeof (arguments[0]) === 'object') {
+      var list = arguments[0];
+      return list[Math.floor((Math.random()*list.length))];
+    }
+
+    // random(min, max) : integer
+    if (arguments.length === 2 && typeof (arguments[0]) === 'number' && typeof (arguments[1]) === 'number' ) {
+      var min = arguments[0];
+      var max = arguments[1];
+      if (max<min) { [min, max] = [max, min]; }
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    return false;
+  },
 
   uuID: function () {
     // unik ID
