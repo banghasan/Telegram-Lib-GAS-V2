@@ -57,6 +57,10 @@ var Utils = {
     }
   },
 
+  random: function(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
   uuID: function () {
     // unik ID
     return Utilities.getUuid();

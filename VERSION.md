@@ -17,8 +17,11 @@
 
 10 : bug fix requestForm
 
-11* : Utils.js
+11 : Utils.js
         + textBlob(isiText, namaFile)
+
+12* : Utils.js
+        + random(array)
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
