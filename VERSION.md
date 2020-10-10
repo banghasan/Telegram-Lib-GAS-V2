@@ -19,8 +19,6 @@
 
 11 : Utils.js
         + textBlob(isiText, namaFile) : blob
-
-12 : Utils.js
         + random(list) : item
         + random(min, max) : integer
 ```
