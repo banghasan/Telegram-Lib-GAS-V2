@@ -60,7 +60,7 @@ var Utils = {
   random: function () {
 
     // random(list) : item
-    if (arguments.length === 1 && typeof (arguments[0]) === 'object') {
+    if (arguments.length === 1 && (arguments[0]) instanceof Array) {
       var list = arguments[0];
       return list[Math.floor((Math.random()*list.length))];
     }
