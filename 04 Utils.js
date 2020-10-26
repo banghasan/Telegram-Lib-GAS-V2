@@ -2,6 +2,20 @@
 Kelas berbagai utilitas
 */
 var Utils = {
+
+  /**
+  Substr seperti PHP, hanya tidak support minus
+  @param {string} text yang akan diolah
+  @param {number} offset angka memulai, berawal dari 0
+  @param {number} length panjang yang akan dipotong, minimal 1
+  */
+  substr: function(text, offset, length) {
+    text = [...text];
+    let hasil = '';
+    for (i = 0; i < length; i++) hasil += text[(offset+i)];
+    return hasil;
+  },
+
   /**
   Membersihkan tag HTML
   @param {string} text yang akan dibersihkan
@@ -74,6 +88,10 @@ var Utils = {
     }
 
     return false;
+  },
+
+  isArray: function (obj){
+    return Object.prototype.toString.call(obj) === '[object Array]' ;
   },
 
   uuID: function () {

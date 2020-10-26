@@ -21,6 +21,10 @@
         + textBlob(isiText, namaFile) : blob
         + random(list) : item
         + random(min, max) : integer
+
+12 : Utils.js
+        + isArray(object) : boolean
+        + substr(text, offset, length)
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
