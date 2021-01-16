@@ -22,9 +22,25 @@
         + random(list) : item
         + random(min, max) : integer
 
-12 : Utils.js
+-12 : Utils.js
         + isArray(object) : boolean
         + substr(text, offset, length) : string
+
+        x dibatalkan rilis, karena ada bugs yang belum diketahui sebabnya
+
+- 13 : telegram.js
+        + update bot API v5
+     newMsg.js
+        * bugfix sendSticker
+
+     URL: https://t.me/bot_indonesia/21
+
+     x dibatalkan rilis, banyak struktur berubah. Silakan kembali ke v11.
+
+- 14* : newMsg.js
+        * bugfix sendSticker     
+
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
+_Tanda - berarti rilis dibatalkan._
