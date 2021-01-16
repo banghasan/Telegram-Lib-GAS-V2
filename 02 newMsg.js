@@ -230,7 +230,7 @@ class msgTelegram extends Telegram {
     }
 
     sendSticker(chat_id, sticker, disable_notification, reply_to_message_id, reply_markup) {
-        return this.request('getUpdates', this.buildQuery({
+        return this.request('sendSticker', this.buildQuery({
           'chat_id': chat_id,
           'sticker': sticker,
           'disable_notification': disable_notification,

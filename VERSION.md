@@ -24,7 +24,7 @@
 
 12 : Utils.js
         + isArray(object) : boolean
-        + substr(text, offset, length)
+        + substr(text, offset, length) : string
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
