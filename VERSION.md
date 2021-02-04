@@ -37,8 +37,14 @@
 
      x dibatalkan rilis, banyak struktur berubah. Silakan kembali ke v11.
 
-- 14* : newMsg.js
-        * bugfix sendSticker     
+
+- 14 : (skiping)
+
+- 15 : newMsg.js
+        * bugfix sendSticker
+
+       script.js
+         + new class untuk miniDB, scriptProperties   
 
 ```
 
