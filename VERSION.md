@@ -38,13 +38,18 @@
      x dibatalkan rilis, banyak struktur berubah. Silakan kembali ke v11.
 
 
-- 14 : (skiping)
+- 14&15 : (skiping)
 
-- 15 : newMsg.js
+- 16 : newMsg.js
         * bugfix sendSticker
 
        script.js
          + new class untuk miniDB, scriptProperties   
+
+- 17 : util.js
+        * bugfix random([array])
+        + isArray(object) : boolean
+        + substr(text, offset, length) : string
 
 ```
 

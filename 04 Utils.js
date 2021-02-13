@@ -11,7 +11,7 @@ var Utils = {
   */
   substr: function(text, offset, length) {
     text = [...text];
-    let hasil = '';
+    var hasil = '';
     for (i = 0; i < length; i++) hasil += text[(offset+i)];
     return hasil;
   },
@@ -70,11 +70,15 @@ var Utils = {
       return false;
     }
   },
+    
+  isArray: function (obj){
+    return Object.prototype.toString.call(obj) === '[object Array]' ;
+  },
 
   random: function () {
 
     // random(list) : item
-    if (arguments.length === 1 && (arguments[0]) instanceof Array) {
+    if (arguments.length === 1 && this.isArray(arguments[0])) {
       var list = arguments[0];
       return list[Math.floor((Math.random()*list.length))];
     }
@@ -88,10 +92,6 @@ var Utils = {
     }
 
     return false;
-  },
-
-  isArray: function (obj){
-    return Object.prototype.toString.call(obj) === '[object Array]' ;
   },
 
   uuID: function () {
@@ -152,8 +152,7 @@ var Utils = {
     return HtmlService.createHtmlOutput(text);
   },
   
-  outToJSON: function(data, spasi) {
-    spasi = spasi || 2;
+  outToJSON: function(data, spasi=2) {
     return JSON.stringify(data, null, spasi);
   }
   

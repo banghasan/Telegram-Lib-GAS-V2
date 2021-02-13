@@ -3,8 +3,12 @@
 * oleh : bangHasan
 *
 * ID: MWkhreE4chZ56V_bDwpYUBPvg_do21SJR
+* ID: 11LhYmqUg8UVtqMg3rPaau5uHwCMtsE_0RwUQim4ZY-OCfDe_YyIYKPSP
+*
 * Versi Log, ada di file Version
+*
 * Source Code: 
+*
 *   https://github.com/banghasan/Telegram-Lib-GAS-V2
 *
 * Hasanudin H Syafaat
