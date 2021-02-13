@@ -3,18 +3,26 @@
 ```
 /************
 * Telegram Lib Ver.2
-* oleh : bangHasan
 *
-* ID: MWkhreE4chZ56V_bDwpYUBPvg_do21SJR
-* Versi Log, ada di file Guide
+* 🔰 ID Legacy: MWkhreE4chZ56V_bDwpYUBPvg_do21SJR
+* 🔰 ID New Editor: 11LhYmqUg8UVtqMg3rPaau5uHwCMtsE_0RwUQim4ZY-OCfDe_YyIYKPSP
 *
-* Hasanudin H Syafaat
-* banghasan@gmail.com
+* 👤 Hasanudin H Syafaat
+* 💼 @hasanudinhs
+* 📧 banghasan@gmail.com
 *
-* Date : 2020-09-03 17:37:20
+* ⏰ 2020-09-03 17:37:20
+
+* Support hanya melalui Grup Telegram @botindonesia
+*  _           _   _           _                       _       
+* | |         | | (_)         | |                     (_)      
+* | |__   ___ | |_ _ _ __   __| | ___  _ __   ___  ___ _  __ _ 
+* | '_ \ / _ \| __| | '_ \ / _` |/ _ \| '_ \ / _ \/ __| |/ _` |
+* | |_) | (_) | |_| | | | | (_| | (_) | | | |  __/\__ \ | (_| |
+* |_.__/ \___/ \__|_|_| |_|\__,_|\___/|_| |_|\___||___/_|\__,_|
+*                                                              
 *
-* * @hasanudinhs
-* * @botindonesia
+* ＠ｂｏｔｉｎｄｏｎｅｓｉａ
 *
 ***********/
 ```
