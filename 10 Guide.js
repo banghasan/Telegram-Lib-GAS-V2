@@ -3,16 +3,16 @@
  */
 
 var Alur = {
-    doPost: function(e) {        
-
-        if (e.postData.type == "application/json") {
-            var update = JSON.parse(e.postData.contents);
-            if (update) return update;            
-        }       
-
-        return false;        
+    doPost: function (e) {
+  
+      if (e.postData.type == "application/json") {
+        var update = JSON.parse(e.postData.contents);
+        if (update) return update;
+      }
+  
+      return false;
     }
-}
-
-daftar.prototype.alur   = Alur;
-daftar.prototype.doPost = Alur.doPost;
+  }
+  
+  daftar.prototype.alur = Alur;
+  daftar.prototype.doPost = Alur.doPost;
