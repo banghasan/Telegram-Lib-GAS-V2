@@ -61,7 +61,10 @@
         utils.js
         + substr(input, start, len): panjangnya boleh minus
         + number_format: function(number, decimals, decPoint, thousandsSep) // number format seperti PHP
-  
+
+- 19* :  newMsg.js
+        + versi() // alias untuk version()
+
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
