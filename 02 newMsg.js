@@ -5,6 +5,10 @@
 */
 class msgTelegram extends Telegram {
 
+  version() {
+    return '2.18';
+  }
+
     // kirimPesan adalah alias sendMessage, beda sedikit disable_notification dihilangkan
     kirimPesan(chat_id, text, parse_mode, disable_web_page_preview, reply_to_message_id, reply_markup) {
       return this.sendMessage(chat_id, text, parse_mode, disable_web_page_preview, false, reply_to_message_id, reply_markup);

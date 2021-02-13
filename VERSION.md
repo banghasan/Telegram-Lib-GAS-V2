@@ -51,6 +51,17 @@
         + isArray(object) : boolean
         + substr(text, offset, length) : string
 
+- 18 : 
+        telegram.js
+        * bug fix requestForm
+
+        newMsg.js
+        * version() // untuk cek versi Lib
+
+        utils.js
+        + substr(input, start, len): panjangnya boleh minus
+        + number_format: function(number, decimals, decPoint, thousandsSep) // number format seperti PHP
+  
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
