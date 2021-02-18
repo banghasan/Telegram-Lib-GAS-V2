@@ -4,13 +4,12 @@
 */
 var daftar = class Daftar extends msgTelegram {
 
-    setToken(token) {
-      this.token = token;
-    }
-  
-    getToken() {
-      return this.token;
-    }
-  
+  setToken(token) {
+    this.token = token;
   }
-  
+
+  getToken() {
+    return this.token;
+  }
+
+}

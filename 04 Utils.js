@@ -9,16 +9,16 @@ var Utils = {
   @param {number} offset angka memulai, berawal dari 0
   @param {number} length panjang yang akan dipotong, support minus
   */
-  substr: function(input, start, len){
+  substr: function (input, start, len) {
     // len support minus
-  
+
     var inputLength = input.length
     var end = inputLength
-  
+
     if (start < 0) {
       start += end
     }
-  
+
     if (typeof len !== 'undefined') {
       if (len < 0) {
         end = len + end
@@ -26,7 +26,7 @@ var Utils = {
         end = len + start
       }
     }
-  
+
     if (start > inputLength || start < 0 || start > end) {
       return false
     }
@@ -40,9 +40,9 @@ var Utils = {
   */
   clearHTML: function (s) {
     return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
   },
 
   /**
@@ -51,13 +51,13 @@ var Utils = {
   */
   clearMarkdown: function (s) {
     return s
-    .replace(/_/g, "\\_")
-    .replace(/\*/g, "\\*")
-    .replace(/\[/g, "\\[")
-    .replace(/`/g, "\\`");
+      .replace(/_/g, "\\_")
+      .replace(/\*/g, "\\*")
+      .replace(/\[/g, "\\[")
+      .replace(/`/g, "\\`");
   },
 
-  
+
   /**
   Menghasilkan waktu
   @param {date} tanggal dama timeunixstamp
@@ -88,9 +88,9 @@ var Utils = {
       return false;
     }
   },
-    
-  isArray: function (obj){
-    return Object.prototype.toString.call(obj) === '[object Array]' ;
+
+  isArray: function (obj) {
+    return Object.prototype.toString.call(obj) === '[object Array]';
   },
 
   random: function () {
@@ -98,14 +98,14 @@ var Utils = {
     // random(list) : item
     if (arguments.length === 1 && this.isArray(arguments[0])) {
       var list = arguments[0];
-      return list[Math.floor((Math.random()*list.length))];
+      return list[Math.floor((Math.random() * list.length))];
     }
 
     // random(min, max) : integer
-    if (arguments.length === 2 && typeof (arguments[0]) === 'number' && typeof (arguments[1]) === 'number' ) {
+    if (arguments.length === 2 && typeof (arguments[0]) === 'number' && typeof (arguments[1]) === 'number') {
       var min = arguments[0];
       var max = arguments[1];
-      if (max<min) { [min, max] = [max, min]; }
+      if (max < min) { [min, max] = [max, min]; }
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
@@ -133,10 +133,10 @@ var Utils = {
     if (ribuan) {
       a = new Date(UNIX_timestamp * 1000);
     }
-    
+
     //buat index bulan
     var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
-    
+
     // ambil pecahan waktu masing-masing
     var year = a.getFullYear();
     var month = months[a.getMonth()];
@@ -144,14 +144,14 @@ var Utils = {
     var hour = a.getHours();
     var min = a.getMinutes();
     var sec = a.getSeconds();
-    
+
     // gabungkan ke dalam variable time
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
     return time;
   },
 
   // number format seperti PHP
-  
+
   /*
   number_format(1234.56)   //   returns  '1,235'
 
@@ -189,7 +189,7 @@ var Utils = {
     var sep = (typeof thousandsSep === 'undefined') ? ',' : thousandsSep
     var dec = (typeof decPoint === 'undefined') ? '.' : decPoint
     var s = ''
-  
+
     var toFixedFix = function (n, prec) {
       if (('' + n).indexOf('e') === -1) {
         return +(Math.round(n + 'e+' + prec) + 'e-' + prec)
@@ -202,7 +202,7 @@ var Utils = {
         return (+(Math.round(+arr[0] + 'e' + sig + (+arr[1] + prec)) + 'e-' + prec)).toFixed(prec)
       }
     }
-  
+
     // @todo: for IE parseFloat(0.55).toFixed(0) = 0;
     s = (prec ? toFixedFix(n, prec).toString() : '' + Math.round(n)).split('.')
     if (s[0].length > 3) {
@@ -212,34 +212,34 @@ var Utils = {
       s[1] = s[1] || ''
       s[1] += new Array(prec - s[1].length + 1).join('0')
     }
-  
+
     return s.join(dec)
   },
 
   // contoh: var blob = textBlob('Hasanudin H Syafaat', 'nama')
   textBlob: function (isiText, namaFile) {
     return Utilities.newBlob('')
-    .setDataFromString(isiText)
-    .setName(namaFile + '.txt')
-    .setContentType('plain/text');
+      .setDataFromString(isiText)
+      .setName(namaFile + '.txt')
+      .setContentType('plain/text');
   },
-  
-  outputText: function(text) {
+
+  outputText: function (text) {
     return ContentService.createTextOutput(text);
   },
-  
-  outputJSON: function(data) {
-    return ContentService.createTextOutput(JSON.stringify(data) ).setMimeType(ContentService.MimeType.JSON); 
+
+  outputJSON: function (data) {
+    return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
   },
-  
-  outputHTML: function(text) {
+
+  outputHTML: function (text) {
     return HtmlService.createHtmlOutput(text);
   },
-  
-  outToJSON: function(data, spasi=2) {
+
+  outToJSON: function (data, spasi = 2) {
     return JSON.stringify(data, null, spasi);
   }
-  
+
 }
 
 

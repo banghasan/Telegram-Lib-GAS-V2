@@ -65,6 +65,9 @@
 - 19* :  newMsg.js
         + versi() // alias untuk version()
 
+        fetch.js
+        + memasukkan class fetch
+
 ```
 
 _Tanda * berarti belum di rilis versi barunya._
