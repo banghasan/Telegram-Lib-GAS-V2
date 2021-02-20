@@ -1,3 +1,17 @@
+/**
+ * Simple method fetch untuk REST API pada Google App Scripts
+ * 
+ * Hasanudin H. Syafaat
+ * TG @hasanudinhs
+ * Email banghasan@gmail.com
+ * 
+ * Support hanya di grup Telegram @botIndonesia
+ * 
+ * Code date: 20 Februari 2021
+ * 
+ * @param {String} url 
+ */
+
 function Fetch(url = false) {
     this.req = { url: url, uri: '', options: { method: 'get' } },
         this.req.url = url;
