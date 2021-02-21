@@ -45,7 +45,10 @@ Fetch.prototype = {
         var url = arguments[0] ? arguments[0] : this.req.url + this.req.uri;
         var options = arguments[1] ? arguments[1] : this.req.options;
         if (!url) return false;
-        return this.result = UrlFetchApp.fetch(url, options);
+        this.result = UrlFetchApp.fetch(url, options);
+        var dJSON = JSON.parse(this.result);
+        if (dJSON) this.result = dJSON;
+        return this.result;
     },
 
     // addQuery({cari: "kata", khusus: "ya"}) : ?cari=kata&khusus=ya
@@ -58,10 +61,10 @@ Fetch.prototype = {
         }, "");
     },
 
-    toJSON: function () {
+    /* toJSON: function () {
         if (!this.result) return false;
         return JSON.parse(this.result);
-    },
+    }, */
 
     // get(url), get(uri)
     // get(url, uri)
