@@ -151,12 +151,12 @@ Fetch.prototype = {
             }
         }
 
-    // post(url|uri, data, isJSON)
-    if (arguments.length >= 3) {
-        if (typeof arguments[2] === 'boolean') {
-          var isJSON = arguments[2];
+        // post(url|uri, data, isJSON)
+        if (arguments.length >= 3) {
+            if (typeof arguments[2] === 'boolean') {
+                var isJSON = arguments[2];
+            }
         }
-      }
 
         if (isJSON) {
             this.req.options.contentType = 'application/json';
