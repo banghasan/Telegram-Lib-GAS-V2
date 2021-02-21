@@ -94,7 +94,7 @@ Fetch.prototype = {
             }
         }
 
-        // get(url, data)
+        // get(url, data), get(uri, data)
         if (arguments.length >= 2) {
             // jika objek {cari: "kata"}
             if (typeof arguments[1] === 'object') {

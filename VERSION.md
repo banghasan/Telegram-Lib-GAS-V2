@@ -75,7 +75,7 @@
         + allReplace(str, obj)
 
         fetch.js
-        + memasukkan class fetch // detail di doc aja
+        + memasukkan class fetch // detail baca di doc https://bit.ly/telegram-lib-v2
 
 ```
 
