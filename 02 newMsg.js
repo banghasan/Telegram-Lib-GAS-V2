@@ -6,7 +6,7 @@
 class msgTelegram extends Telegram {
 
   version() {
-    return '2.19';
+    return '2.20';
   }
 
   versi() {
@@ -16,6 +16,22 @@ class msgTelegram extends Telegram {
   // kirimPesan adalah alias sendMessage, beda sedikit disable_notification dihilangkan
   kirimPesan(chat_id, text, parse_mode, disable_web_page_preview, reply_to_message_id, reply_markup) {
     return this.sendMessage(chat_id, text, parse_mode, disable_web_page_preview, false, reply_to_message_id, reply_markup);
+  }
+
+  // kirimPesan adalah alias sendMessage, beda sedikit disable_notification dihilangkan
+  copyMessage(chat_id, from_chat_id, message_id, caption, parse_mode, caption_entities, disable_notification, reply_to_message_id, allow_sending_without_reply, reply_markup) {
+    return this.request('copyMessage', this.buildQuery({
+      'chat_id': chat_id,
+      'from_chat_id': from_chat_id,
+      'message_id': message_id,
+      'caption': caption,
+      'parse_mode': parse_mode,
+      'caption_entities': caption_entities,
+      'disable_notification': disable_notification,
+      'reply_to_message_id': reply_to_message_id,
+      'allow_sending_without_reply': allow_sending_without_reply,
+      'reply_markup': reply_markup
+    }));
   }
 
   // compablity mode di versi sebelumnya	
@@ -125,6 +141,12 @@ class msgTelegram extends Telegram {
     return this.sendDocument(msg.chat.id, document, thumb, caption, parse_mode, false, reply_to_message_id, reply_markup);
   }
 
+  getFileLink(file_id) {
+     let content = this.getFile(file_id)
+     if (content.result.file_path)
+     return this.urlapi + this.token + '/' + content.result.file_path
+     return false
+  }
 
   // tambahan method yang belum ada di generator
   getUpdates(offset, limit, timeout, allowed_updates) {
@@ -244,6 +266,30 @@ class msgTelegram extends Telegram {
       'disable_notification': disable_notification,
       'reply_to_message_id': reply_to_message_id,
       'reply_markup': reply_markup
+    }));
+  }
+
+  createChatInviteLink(chat_id, expire_date, member_limit) {
+    return this.request('createChatInviteLink', this.buildQuery({
+      'chat_id': chat_id,
+      'expire_date': expire_date,
+      'member_limit': member_limit
+    }));
+  }
+
+  editChatInviteLink(chat_id, invite_link, expire_date, member_limit) {
+    return this.request('editChatInviteLink', this.buildQuery({
+      'chat_id': chat_id,
+      'invite_link': invite_link,
+      'expire_date': expire_date,
+      'member_limit': member_limit
+    }));
+  }
+
+  revokeChatInviteLink(chat_id, invite_link) {
+    return this.request('revokeChatInviteLink', this.buildQuery({
+      'chat_id': chat_id,
+      'invite_link': invite_link
     }));
   }
 

@@ -77,6 +77,16 @@
         fetch.js
         + memasukkan class fetch // detail baca di doc https://bit.ly/telegram-lib-v2
 
+- 20 : telegram.js
+        + unpinAllChatMessages(chat_id)
+
+       newMsg.js
+        + getFileLink(file_id)
+        + copyMessage(chat_id, from_chat_id, message_id, caption, parse_mode, caption_entities, disable_notification, reply_to_message_id, allow_sending_without_reply, reply_markup)        
+        + createChatInviteLink(chat_id, expire_date, member_limit)
+        + editChatInviteLink(chat_id, invite_link, expire_date, member_limit)
+        + revokeChatInviteLink(chat_id, invite_link)
+
 ```
 
 _Tanda * berarti belum di rilis versi barunya._

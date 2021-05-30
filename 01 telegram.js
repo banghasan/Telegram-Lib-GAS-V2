@@ -779,6 +779,12 @@ class Telegram {
     }));
   }
 
+  unpinAllChatMessages(chat_id) {
+    return this.request('unpinAllChatMessages', this.buildQuery({
+      'chat_id': chat_id
+    }))
+  }
+
   /**
   *Use this method for your bot to leave a group, supergroup or channel. Returns True on success.
   */
