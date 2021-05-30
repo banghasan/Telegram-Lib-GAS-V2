@@ -28,7 +28,7 @@
 
         x dibatalkan rilis, karena ada bugs yang belum diketahui sebabnya
 
-- 13 : telegram.js
+-13 : telegram.js
         + update bot API v5
      newMsg.js
         * bugfix sendSticker
@@ -40,18 +40,18 @@
 
 - 14&15 : (skiping)
 
-- 16 : newMsg.js
+16 : newMsg.js
         * bugfix sendSticker
 
        script.js
          + new class untuk miniDB, scriptProperties   
 
-- 17 : util.js
+17 : util.js
         * bugfix random([array])
         + isArray(object) : boolean
         + substr(text, offset, length) : string
 
-- 18 : telegram.js
+18 : telegram.js
         * bug fix requestForm
 
         newMsg.js
@@ -61,7 +61,7 @@
         + substr(input, start, len): panjangnya boleh minus
         + number_format: function(number, decimals, decPoint, thousandsSep) // number format seperti PHP
 
-- 19 : newMsg.js
+19 : newMsg.js
         + versi() // alias untuk version()
 
         util.js
@@ -77,7 +77,7 @@
         fetch.js
         + memasukkan class fetch // detail baca di doc https://bit.ly/telegram-lib-v2
 
-- 20 : telegram.js
+20 : telegram.js
         + logOut()
         + close()
         + unpinAllChatMessages(chat_id)
