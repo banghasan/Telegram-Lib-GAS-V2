@@ -78,6 +78,8 @@
         + memasukkan class fetch // detail baca di doc https://bit.ly/telegram-lib-v2
 
 - 20 : telegram.js
+        + logOut()
+        + close()
         + unpinAllChatMessages(chat_id)
 
        newMsg.js
