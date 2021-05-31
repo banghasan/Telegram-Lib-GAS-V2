@@ -27,6 +27,16 @@
 ***********/
 ```
 
+## Sample
+
+Halo Bot 
+
+
+![hello bot](https://raw.githubusercontent.com/banghasan/Telegram-Lib-GAS-V2/main/hellobot.jpg)
+
+
+[https://youtu.be/_m9tqN-omCk](https://youtu.be/_m9tqN-omCk)
+
 ## Dokumentasi
 
 - Dokumentasi Versi 2 dapat ditemukan di: https://bit.ly/telegram-lib-v2

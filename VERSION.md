@@ -89,6 +89,8 @@
         + editChatInviteLink(chat_id, invite_link, expire_date, member_limit)
         + revokeChatInviteLink(chat_id, invite_link)
 
+21: *fix getFileLink        
+
 ```
 
 _Tanda * berarti belum di rilis versi barunya._

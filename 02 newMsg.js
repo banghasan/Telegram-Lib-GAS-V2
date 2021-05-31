@@ -6,7 +6,7 @@
 class msgTelegram extends Telegram {
 
   version() {
-    return '2.20';
+    return '2.21';
   }
 
   versi() {
@@ -144,7 +144,7 @@ class msgTelegram extends Telegram {
   getFileLink(file_id) {
      let content = this.getFile(file_id)
      if (content.result.file_path)
-     return this.urlapi + this.token + '/' + content.result.file_path
+     return 'https://api.telegram.org/file/bot' + this.token + '/' + content.result.file_path
      return false
   }
 
