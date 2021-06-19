@@ -89,7 +89,12 @@
         + editChatInviteLink(chat_id, invite_link, expire_date, member_limit)
         + revokeChatInviteLink(chat_id, invite_link)
 
-21: *fix getFileLink        
+21: *fix getFileLink
+
+22: rename Utils ke utils
+
+    utils.js
+      + formatHTML(text, entities)
 
 ```
 
