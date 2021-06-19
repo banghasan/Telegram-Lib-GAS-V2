@@ -6,6 +6,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/banghasan/Telegram-Lib-GAS-V2)
 ![GitHub issues](https://img.shields.io/github/issues/banghasan/Telegram-Lib-GAS-V2)
 ![javascript](https://img.shields.io/badge/lang-javascript-red)
+![telegram botindonesia](https://img.shields.io/badge/telegram-@botindonesia-blue)
 
 ![GitHub forks](https://img.shields.io/github/forks/banghasan/Telegram-Lib-GAS-V2?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/banghasan/Telegram-Lib-GAS-V2?style=social)
@@ -79,7 +80,7 @@ Resume saja, bukan step by step.
 
 4. Bundle script
 
-    `clasp version`
+    `clasp version "keterangan"`
 
 5. Jangan lupa di atur hak akses-nya.        
 
