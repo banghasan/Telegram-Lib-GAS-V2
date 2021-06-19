@@ -6,7 +6,7 @@
 class msgTelegram extends Telegram {
 
   version() {
-    return '2.21';
+    return '2.23';
   }
 
   versi() {

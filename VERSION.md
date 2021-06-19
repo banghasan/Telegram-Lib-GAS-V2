@@ -91,10 +91,12 @@
 
 21: *fix getFileLink
 
-22: rename Utils ke utils
+23: rename Utils ke utils
 
     utils.js
       + formatHTML(text, entities)
+
+  format versi selalu ganjil (asli tak sengaja haha, kelupaan update versi)
 
 ```
 
